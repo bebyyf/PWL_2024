@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ItemController; //digunakan untuk mengambil ItemController agar bisa digunakan dalam file laravel untuk pemanggilan metode controller.
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +16,3 @@ use App\Http\Controllers\ItemController; //digunakan untuk mengambil ItemControl
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::resource('items', ItemController::class); //digunakan untuk mendaftarkan semua crud secara otomatis.
-
-
-
